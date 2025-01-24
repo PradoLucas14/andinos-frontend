@@ -1,0 +1,8 @@
+.Hero{
+    height: 100vh;
+    position: relative;
+    background-image: url("../../../assets/img/imgHero.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}

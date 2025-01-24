@@ -4,7 +4,7 @@ import Hero from '../../components/homeComponents/hero/Hero'
 
 function Home() {
   return (
-    <div>
+    <div className='Home'>
       <Hero/>
     </div>
   )
