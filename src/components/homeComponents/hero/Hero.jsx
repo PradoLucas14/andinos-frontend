@@ -10,7 +10,7 @@ function Hero() {
                 <h1>ANDINOS</h1>
                 <p>Donde los sabores del norte argentino cuentan su historia.</p>
                 <button className="btnHero">
-                    REGISTRATE
+                <span>Registrate</span>
                 </button>
             </div>
         </div>
