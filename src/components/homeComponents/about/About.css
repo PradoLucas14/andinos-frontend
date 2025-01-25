@@ -1,0 +1,48 @@
+.About {
+    background: black;
+    padding: 6% 0 6% 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre columnas */
+    margin: 0 10%;
+  }
+  
+  .column {
+    flex: 1; /* Ambas columnas tendrán el mismo tamaño */
+  }
+  
+  .image-column img {
+    width: 100%; /* Imagen responsiva */
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  .text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text-column h2 {
+    margin-bottom: 15px;
+  }
+  
+  .text-column p {
+    line-height: 1.6;
+    color: #333; /* Color de texto */
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 991px) {
+    .container {
+      flex-direction: column; /* Cambia a una sola columna */
+    }
+  
+    .image-column {
+      order: -1; /* Opcional: para mostrar la imagen arriba */
+    }
+  }
+  
