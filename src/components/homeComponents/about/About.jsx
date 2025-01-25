@@ -12,9 +12,14 @@ function About() {
         <div className="column text-column">
           <h2>Sobre Nosotros</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
-            malesuada nisl, ut dictum odio. Etiam venenatis lectus a consequat
-            tincidunt. Phasellus varius quis eros id tincidunt.
+          Andinos es un restaurante que celebra la tradición del norte 
+          argentino mientras ofrece los clásicos favoritos que todos disfrutan. 
+          Nuestra propuesta combina lo mejor de ambas experiencias: 
+          platos tradicionales como empanadas salteñas, locros, 
+          humitas y tamales se mezclan con opciones modernas como 
+          hamburguesas jugosas, papas fritas crocantes, pizzas irresistibles y más. 
+          Cada bocado es una invitación a explorar sabores auténticos, 
+          ideales para compartir momentos inolvidables en un ambiente cálido y acogedor.
           </p>
         </div>
       </div>
