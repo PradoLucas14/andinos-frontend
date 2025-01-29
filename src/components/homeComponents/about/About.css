@@ -1,43 +1,37 @@
 .About {
     background: black;
     padding: 6% 0 6% 0;
-  }
-  
-  .container {
+}
+.container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre columnas */
+    gap: 20px; 
     margin: 0 10%;
-  }
-  
-  .column {
-    flex: 1; /* Ambas columnas tendrán el mismo tamaño */
-  }
-  
-  .image-column img {
-    width: 100%; /* Imagen responsiva */
+}  
+.column {
+    flex: 1; 
+}  
+.image-column img {
+    width: 100%; 
     height: 700px;
     object-fit: cover;
-  }
-  
-  .text-column {
+}  
+.text-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .text-column h2 {
+}
+.text-column h2 {
     margin-bottom: 15px;
     color: #fff;
     font-size: 1.8rem;
-  }
-  
-  .text-column p {
+}  
+.text-column p {
     line-height: 1.6;
     color: #fff; 
     font-size: 1.2rem;
-  }
-  .btnAbout {
+}
+.btnAbout {
     max-width: 150px;
     padding: 10px 25px;
     margin-top: 25px;
@@ -50,41 +44,35 @@
     cursor: pointer;
     transition: color 0.3s ease;
 }
-
 .btnAbout span {
     position: relative;
-    z-index: 2; /* Asegura que el texto esté por encima del pseudo-elemento */
+    z-index: 2; 
 }
-
 .btnAbout::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%; /* Comienza fuera del botón */
+    left: -100%;
     width: 100%;
     height: 100%;
-    background-color: orangered; /* Color del efecto */
-    z-index: 0; /* Detrás del texto */
-    transition: left 0.5s ease; /* Transición suave al mover el pseudo-elemento */
+    background-color: orangered;
+    z-index: 0; 
+    transition: left 0.5s ease; 
 }
-
 .btnAbout:hover {
-    color: #fff; /* Cambia el color del texto para mayor contraste */
+    color: #fff; 
 }
-
 .btnAbout:hover::before {
-    left: 0; /* Mueve el pseudo-elemento completamente dentro del botón */
-}
+    left: 0; 
+} 
 
-  
-  /* Estilo responsivo */
   @media (max-width: 991px) {
     .container {
-      flex-direction: column; /* Cambia a una sola columna */
+      flex-direction: column; 
     }
   
     .image-column {
-      order: -1; /* Opcional: para mostrar la imagen arriba */
+      order: -1; 
     }
   }
   
