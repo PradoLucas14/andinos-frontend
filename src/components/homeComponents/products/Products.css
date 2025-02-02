@@ -3,7 +3,7 @@
     background-color: #000;
     font-size: 2rem;
     margin: 0;
-    padding: 4% 9% 4% 9%;
+    padding: 0% 9% 3% 9%;
     text-align: center;
 }
 
@@ -50,7 +50,6 @@
     transition: opacity 0.3s ease-in-out;
     color: white;
     text-align: center;
-    padding: 10px;
 }
 
 .product-card:hover .overlay {
@@ -58,12 +57,14 @@
 }
 
 .overlay-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 5px;
 }
 
 .overlay-description {
     font-size: 1rem;
+    text-align: center;
+    width: 49%;
 }
 
 /* Estilos para pantallas menores a 991px */
@@ -75,6 +76,7 @@
 
     .productsTittle{
         font-size: 1.7rem;
+        text-align: start;
     }
 
     .product-card {
@@ -83,6 +85,10 @@
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 5px;
+    }
+
+    .overlay-description {
+        width: 80%;
     }
 
     .product-image {
