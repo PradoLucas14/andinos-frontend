@@ -8,16 +8,21 @@ function Products() {
   const images = [img1, img2, img3];
 
   return (
-    <div className='products-container'>
-      {images.map((image, index) => (
-        <div className='product-card' key={index}>
-          <img src={image} alt={`Producto ${index + 1}`} className='product-image' />
-          <div className='overlay'>
-            <h3 className='overlay-title'>Título del Producto {index + 1}</h3>
-            <p className='overlay-description'>Descripción breve del producto.</p>
+    <div className="products">
+      <h2 className="productsTittle">
+        - Nuestros Productos -
+      </h2>
+      <div className='products-container'>
+        {images.map((image, index) => (
+          <div className='product-card' key={index}>
+            <img src={image} alt={`Producto ${index + 1}`} className='product-image' />
+            <div className='overlay'>
+              <h3 className='overlay-title'>Título del Producto {index + 1}</h3>
+              <p className='overlay-description'>Descripción breve del producto.</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
