@@ -12,7 +12,7 @@ import img2 from "../../../assets/img/imgMenu2.jpg";
 import img3 from "../../../assets/img/imgMenu3.jpg";
 import img4 from "../../../assets/img/imgMenu4.jpg";
 import img5 from "../../../assets/img/imgMenu5.jpg";
-import img6 from "../../../assets/img/Imgmenu6.avif";
+import img6 from "../../../assets/img/ImgMenu6.avif";
 
 function Menu() {
   const menuItems = [
