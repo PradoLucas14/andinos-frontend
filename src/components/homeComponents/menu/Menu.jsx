@@ -32,7 +32,7 @@ function Menu() {
         spaceBetween={20}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
+        autoplay={{ delay: 6500, disableOnInteraction: false }}
         navigation
         pagination={{ clickable: true }}
         breakpoints={{

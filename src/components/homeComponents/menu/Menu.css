@@ -1,6 +1,6 @@
 .menu-container {
     text-align: center;
-    padding: 50px 20px;
+    padding: 0 20px;
     background-color: #000;
     color: #fff;
 }
@@ -9,6 +9,7 @@
     font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
+    padding: 0;
 }
 
 .menu-swiper {
@@ -42,5 +43,5 @@
 .menu-item-price {
     font-size: 1.2rem;
     color: #ffcc00;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
