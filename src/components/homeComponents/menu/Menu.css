@@ -1,6 +1,6 @@
 .menu-container {
     text-align: center;
-    padding: 0 20px;
+    padding: 0 20px 6% 20px;
     background-color: #000;
     color: #fff;
 }
@@ -27,7 +27,7 @@
 
 .menu-image {
     width: 100%;
-    height: 350px;
+    height: 400px;
     object-fit: cover;
 }
 
