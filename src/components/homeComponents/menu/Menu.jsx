@@ -12,7 +12,6 @@ import img2 from "../../../assets/img/imgMenu2.jpg";
 import img3 from "../../../assets/img/imgMenu3.jpg";
 import img4 from "../../../assets/img/imgMenu4.jpg";
 import img5 from "../../../assets/img/imgMenu5.jpg";
-import img6 from "../../../assets/img/ImgMenu6.jpg";
 
 function Menu() {
   const menuItems = [
@@ -20,8 +19,7 @@ function Menu() {
     { src: img2, title: "Hamburgueza", price: "$3500" },
     { src: img3, title: "Pizza", price: "$6100" },
     { src: img4, title: "Tacos de Carne", price: "$800" },
-    { src: img5, title: "Ñoquis", price: "$3800" },
-    { src: img6, title: "Milanesa", price: "$4400" }
+    { src: img5, title: "Ñoquis", price: "$3800" }
   ];
 
   return (
