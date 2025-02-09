@@ -1,0 +1,57 @@
+.contact{
+    background-color: black;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactBanner {
+    background-image: url("https://oleico.com/wp-content/uploads/2020/07/original-ef8bf4bb384d2e9b13a075fede5ca4c5-scaled-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%; /* Ajusta según lo necesites */
+    display: flex;
+    align-items: center;
+    margin: 6% 10% 0 10%;
+}
+.rightColumn{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formContainer{
+    margin: 100px;
+    padding: 30px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.formContainer h2{
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.MuiOutlinedInput-root {
+    background-color: transparent;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}  
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: orangered !important;
+}  
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: orangered !important;
+}  
+.MuiInputLabel-root {
+    color: #fff !important;
+}  
+.MuiInputLabel-root.Mui-focused {
+    color: orangered !important;
+}
+  
+    
