@@ -21,14 +21,14 @@ function Contact() {
           {/* Columna derecha con el formulario */}
           <Grid item xs={12} md={6} className="rightColumn" style={{ height: "100%" }}>
             <Paper elevation={3} className="formContainer">
-              <h2>Contacto</h2>
+              <h2>Contactanos</h2>
               {showAlert && <Alert severity="success">Mensaje enviado con éxito!</Alert>}
               <form onSubmit={handleSubmit}>
                 <TextField fullWidth className="input" label="Nombre" variant="outlined" margin="normal" />
                 <TextField fullWidth className="input" label="Correo Electrónico" variant="outlined" margin="normal" />
                 <TextField fullWidth className="input" label="Mensaje" variant="outlined" margin="normal" multiline rows={6} />
-                <Button variant="contained" color="primary" fullWidth type="submit">
-                  Enviar
+                <Button className="btnContact" fullWidth type="submit">
+                  <span>Enviar</span>
                 </Button>
               </form>
             </Paper>

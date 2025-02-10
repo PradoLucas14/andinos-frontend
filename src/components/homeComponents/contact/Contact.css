@@ -13,7 +13,7 @@
     width: 100%; /* Ajusta según lo necesites */
     display: flex;
     align-items: center;
-    margin: 6% 10% 0 10%;
+    margin: 2% 10% 6% 10%;
 }
 .rightColumn{
     background-color: rgba(0, 0, 0, 0.8);
@@ -30,7 +30,8 @@
 .formContainer h2{
     color: #fff;
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    padding: 0 !important;
+    margin: 0 0 10px 0 !important;
 }
 .MuiOutlinedInput-root {
     background-color: transparent;
@@ -52,6 +53,42 @@
 }  
 .MuiInputLabel-root.Mui-focused {
     color: orangered !important;
+}
+.btnContact{
+    margin-top: 30px !important;
+    padding: 10px 25px !important;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    border: 1px solid #fff !important;
+    border-radius: 0 !important;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.btnContact span {
+    position: relative; 
+    z-index: 2; 
+    color: #fff !important;       
+}
+.btnContact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    z-index: 0;
+    transition: left 0.5s ease;
+}  
+.btnContact:hover {
+    color: #fff !important; 
+}  
+.btnContact:hover::before {
+    left: 0;
 }
   
     
