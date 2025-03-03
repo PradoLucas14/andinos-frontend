@@ -5,11 +5,13 @@ import About from '../../components/homeComponents/about/About'
 import Products from '../../components/homeComponents/products/Products'
 import Menu from '../../components/homeComponents/menu/Menu'
 import Contact from '../../components/homeComponents/contact/Contact'
+import Register from '../register/Register'
 
 function Home() {
   return (
     <div className='Home'>
       <Hero/>
+      <Register/>
       <About/>
       <Products/> 
       <Menu/>
