@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { TextField, Button, Grid, Paper, Alert } from "@mui/material";
+import axios from "axios"; // Importamos axios
 import "./Register.css";
 
 function Register() {
   const [formData, setFormData] = useState({ nombre: "", email: "", password: "", confirmPassword: "" });
   const [errors, setErrors] = useState({ nombre: false, email: false, password: false, confirmPassword: false });
-  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState({ message: "", severity: "" }); // Mensaje y severidad de la alerta
   const [isMobile, setIsMobile] = useState(window.innerWidth < 991);
 
   useEffect(() => {
@@ -30,12 +31,32 @@ function Register() {
     return !Object.values(newErrors).includes(true);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      setShowAlert(true);
-      setTimeout(() => setShowAlert(false), 3000);
-      setFormData({ nombre: "", email: "", password: "", confirmPassword: "" });
+      try {
+        const newUser = {
+          username: formData.nombre,  // Usamos el campo "nombre" como "username"
+          email: formData.email,
+          password: formData.password,
+          termsAccepted: true,  // Valor fijo como verdadero
+          role: "cliente",      // Valor fijo como "cliente"
+          accountActive: true   // Valor fijo como verdadero
+        };
+
+        // Enviar la petición al backend para registrar al usuario
+        const response = await axios.post("http://localhost:3001/api/users/register", newUser);
+
+        if (response.status === 201) {
+          setAlertMessage({ message: "Registro exitoso!", severity: "success" }); // Mostrar mensaje de éxito
+          setTimeout(() => setAlertMessage({ message: "", severity: "" }), 3000); // Limpiar alerta después de 3 segundos
+          setFormData({ nombre: "", email: "", password: "", confirmPassword: "" });  // Limpiar el formulario
+        }
+      } catch (error) {
+        console.error("Error registrando usuario:", error);
+        setAlertMessage({ message: "Error al registrar el usuario. Intenta nuevamente.", severity: "error" }); // Mostrar mensaje de error
+        setTimeout(() => setAlertMessage({ message: "", severity: "" }), 3000); // Limpiar alerta después de 3 segundos
+      }
     }
   };
 
@@ -54,7 +75,9 @@ function Register() {
           >
             <Paper elevation={3} className="formContainer" style={{ maxWidth: "500px", width: isMobile ? "90%" : "auto", padding: "20px" }}>
               <h2>Registrarse</h2>
-              {showAlert && <Alert severity="success">Registro exitoso!</Alert>}
+              {alertMessage.message && (
+                <Alert severity={alertMessage.severity}>{alertMessage.message}</Alert>
+              )}
               <form onSubmit={handleSubmit} autoComplete="off">
                 <TextField 
                   fullWidth 
